@@ -21,9 +21,13 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
     <body id="top">
-        <nav>
+
+        <div id="hero">
+        
+        </div>
+        <nav class="with_hero">
             <ul>
-                <li><a href="#top"><img src="images/cf_logo.svg" width="45" height="45" alt="Charlie Fox" title="Charlie Fox"></a>
+                <li><a href="#top"><img src="{{ site.baseurl }}/images/cf_logo.svg" width="45" height="45" alt="Charlie Fox" title="Charlie Fox"></a>
                 <li><a href="#works">Works</a>
                 <li><a href="#skills">Skills</a>
                 <li><a href="#contact">Contact</a>
@@ -32,16 +36,37 @@
         </nav>
 
         <div id="content">
-            <h1>Heading 1 Sample</h1>
-            <h2>Heading 2 Sample</h2>
-            <h3>Heading 3 Sample</h3>                    
-            <h4>Heading 4 Sample</h4>
+            <div id="works">
+                <h1>Works</h1>
+                <h2>Heading 2 Sample</h2>
+                <h3>Heading 3 Sample</h3>                    
+                <h4>Heading 4 Sample</h4>
+            </div>
+            <div id="skills">
+                <h1>Skills</h1>
+                <h2>Heading 2 Sample</h2>
+                <h3>Heading 3 Sample</h3>                    
+                <h4>Heading 4 Sample</h4>
+            </div>
+            <div id="contact">
+                <h1>Contact</h1>
+                <h2>Heading 2 Sample</h2>
+                <h3>Heading 3 Sample</h3>                    
+                <h4>Heading 4 Sample</h4>
+            </div>
+            <div id="about">
+                <h1>About</h1>
+                <h2>Heading 2 Sample</h2>
+                <h3>Heading 3 Sample</h3>                    
+                <h4>Heading 4 Sample</h4>
+            </div>
+
         </div>
 
 
             <footer>
                 <div class="wow zoomInUp">
-                    <img src="images/cf_logo_tiny.svg" width="32px" height="32px" >
+                    <img src="{{ site.baseurl }}/images/cf_logo_tiny.svg" width="32px" height="32px" >
                     <span>&copy; 2014 Charlie Fox</span>
                 </div>
             </footer>
