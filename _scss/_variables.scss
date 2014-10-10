@@ -12,9 +12,10 @@ $navy: #00111C;
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
-$gray: #666;
+$gray: #aaa;
 $lightGray: #eee;
 $white: #fff;
+$offwhite: #fbfbfb;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
@@ -26,8 +27,13 @@ $raleway: Raleway, sans-serif;
 $openSans: "Open Sans", sans-serif;
 
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
+@mixin tablet {
+  @media screen and (min-width: 35em) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 55em) {
     @content;
   }
 }
