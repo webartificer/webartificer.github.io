@@ -8,6 +8,7 @@
 @import "_reset";
 @import "_variables";
 @import "_animate";
+@import "_font-awesome";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -157,7 +158,7 @@ img {
 
 nav {
     display: table;
-    height: 65px;
+    height: $mh;
     position: fixed;
     top: 0;
     left: 0;    
@@ -165,10 +166,13 @@ nav {
     width: 100%;    
     -webkit-transform: translateZ(0);
     box-sizing: content-box;
-    border-top: 5px solid $navy;
+    border-top: none;
+    transition: all .3s ease;
+    border-bottom: 1px solid $navy;
 
     @include tablet {
         position: absolute;  
+        border-top: 5px solid $navy;
         border-bottom: 1px solid $lightGray;   
         background: $white;
         top: auto;        
@@ -179,16 +183,14 @@ nav {
         width: 100%;
         margin: 0;
         padding: 0;
-        height: 65px;
 
         @include tablet {
             width: auto;
-            padding: .5rem;
         }        
     }
 
     li {
-        display: table-cell;
+        display:inline-block;
         margin: 0;
         padding: 0;
         width: 20%;   
@@ -205,38 +207,69 @@ nav {
         a {
             font-weight: 400;
             font-size: .6em;
-            padding: 0;
-            margin:0;
             color: $white;
             text-decoration: none;
             text-transform: uppercase;
-            transition: all .4s ease;
             width: 100%;
-            height: 65px;
-            display: block;
+            height: 60px;
             vertical-align: middle;
-            line-height: 65px;
+            display: inline-block;
+            padding-top: 7px;
+
 
             &:hover {
-                background: #22618c;
+                background: $ltnavy;
+
+                @include tablet {
+                  background: none;
+                }
+            }
+
+            &.current {
+                background: $ltnavy;
+
+                @include tablet {
+                  background: none;
+                }
             }
 
             @include tablet {
                 color: $navy;
                 font-family: $montserrat;
-            }
-
-            .curent {
-                color: red;
+                line-height: $mh;
+                padding-top: 0;
             }
 
             img {
-                height: 45px;
-                width: 45px;
-                vertical-align: middle;
-                transition: all .25s ease;       
-                padding: 0;
-                margin: 0;    
+                display: none !important;
+
+                @include tablet {
+                  display: inherit !important;
+                  height: 45px;
+                  width: 45px;
+                  vertical-align: middle;
+                  transition: all .25s ease;       
+                  padding: 0;
+                  margin: 0;                   
+                }
+            }
+
+            i {
+              display: block !important;
+              padding: 7px 0 0 0 !important;
+              margin: 0 !important;
+
+              @include tablet {
+                display: none !important;
+              }
+            }
+
+            div {
+              display: inherit;
+                @include tablet {
+                  display: none !important;
+                }
+
             }
         }
     }  

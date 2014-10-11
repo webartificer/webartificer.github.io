@@ -6,6 +6,7 @@
 // Colors
 $blue: #3084b2; 
 $navy: #00111C;
+$ltnavy: #011D2D;
 
 
 // Grays
@@ -25,6 +26,11 @@ $georgia: Georgia, serif;
 $montserrat: Montserrat, sans-serif;
 $raleway: Raleway, sans-serif;
 $openSans: "Open Sans", sans-serif;
+
+
+// Menu Settings
+$mh: 60px;
+
 
 // Mobile breakpoints
 @mixin tablet {

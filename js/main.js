@@ -2,7 +2,7 @@ $(window).on('load resize', function(){
 	
 	var nav = $('nav');
 	var social_show = $('#social_block')
-	var wHeight = $(window).height() - 70;
+	var wHeight = $(window).height() - 66;
 
 	
 	$(window).scroll(function () {
