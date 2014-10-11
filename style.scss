@@ -164,6 +164,7 @@ nav {
     background: $navy;
     width: 100%;    
     -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
     box-sizing: content-box;
     border-top: none;
     border-bottom: 1px solid $navy;
