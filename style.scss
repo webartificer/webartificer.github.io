@@ -29,6 +29,7 @@ body {
   color: $darkGray;
   background: $offwhite;  
   overflow: hidden;
+  position: relative;
 
   @include tablet {
     font-size: 110%;
