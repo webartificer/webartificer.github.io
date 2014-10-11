@@ -25,7 +25,7 @@ body {
   font-weight: 400;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  color: #555;
+  color: $darkGray;
   background: $offwhite;  
 
   @include tablet {
@@ -165,46 +165,65 @@ nav {
     width: 100%;    
     -webkit-transform: translateZ(0);
     box-sizing: content-box;
-    border-top: 5px solid #00111C;
+    border-top: 5px solid $navy;
 
     @include tablet {
         position: absolute;  
-        border-bottom: 1px solid #eee;   
-        background: #fff;
+        border-bottom: 1px solid $lightGray;   
+        background: $white;
         top: auto;        
     }
 
     ul {
-        display: table-cell;
-        vertical-align: middle;
+        display: table;
+        width: 100%;
         margin: 0;
         padding: 0;
+        height: 65px;
+
+        @include tablet {
+            width: auto;
+            padding: .5rem;
+        }        
     }
 
     li {
-        display: inline-block;
-        margin: 0 .4rem;
-        
+        display: table-cell;
+        margin: 0;
+        padding: 0;
+        width: 20%;   
+        height: 100%;     
         text-align: center;
+        vertical-align: middle; 
 
         @include tablet {
+            width: auto;
             text-align: left;
-            margin: 0 1rem;
+            padding: 0 1rem;
         }
 
         a {
             font-weight: 400;
-            font-size: .7em;
+            font-size: .6em;
             padding: 0;
             margin:0;
-            color: #fff;
+            color: $white;
             text-decoration: none;
             text-transform: uppercase;
             transition: all .4s ease;
+            width: 100%;
+            height: 65px;
+            display: block;
+            vertical-align: middle;
+            line-height: 65px;
+
+            &:hover {
+                background: #22618c;
+            }
 
             @include tablet {
-                color: #00111C;
-                font-family: 'Montserrat', sans-serif;
+                color: $navy;
+                font-family: $montserrat;
             }
 
             .curent {
@@ -215,7 +234,9 @@ nav {
                 height: 45px;
                 width: 45px;
                 vertical-align: middle;
-                transition: all .25s ease;                
+                transition: all .25s ease;       
+                padding: 0;
+                margin: 0;    
             }
         }
     }  
@@ -236,6 +257,9 @@ nav.f_nav {
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
+
+
+
 #content {
     width: 90%;
     max-width: 1200px;
@@ -246,8 +270,6 @@ nav.f_nav {
     }
 }
 
-
-
 #hero {
     background: #22618c url('../images/dots.png') center top;
     width: 100%;
@@ -255,6 +277,35 @@ nav.f_nav {
     min-height: 275px;
     border-bottom: 5px solid #00111C;
     display: table;
+
+    h1 {
+        font: 100%/1 'Raleway', sans-serif;
+        font-weight: 700;  
+        color: white;  
+        font-size: 1.5em;
+        text-align: center;
+        padding: .35em;
+        margin: 0;
+        text-shadow: 0px 0px 6px rgba(0,17,28,.75);
+    }
+
+    h2 {
+        font: .7em/1 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #00111C;
+        text-align: center;
+        margin: 0;
+        padding: 0 0 .5em 0;
+        text-transform: uppercase;
+    }
+
+    .logo { 
+        text-align: center;
+        padding: 0;
+        margin: -65px 0 0 0;
+        width: 150px;
+    }
+
 }
 
 #hero div.logo {
