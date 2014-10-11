@@ -43,3 +43,9 @@ $('nav').singlePageNav({
 
 // Place any jQuery/helper plugins in here.
  new WOW().init();
+
+ document.addEventListener('touchmove', function(event) {
+   if(event.target.parentNode.className.indexOf('noBounce') != -1 
+|| event.target.className.indexOf('noBounce') != -1 ) {
+    event.preventDefault(); }
+}, false);
