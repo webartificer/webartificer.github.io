@@ -167,7 +167,7 @@ nav {
     -webkit-transform: translateZ(0);
     box-sizing: content-box;
     border-top: none;
-    transition: all .3s ease;
+    transition: background .3s ease;
     border-bottom: 1px solid $navy;
 
     @include tablet {
