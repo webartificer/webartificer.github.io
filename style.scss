@@ -287,6 +287,8 @@ nav.f_nav {
     position: sticky;
     position: fixed;
     top: 0;
+    bottom: inherit;
+    bottom: auto;
     z-index: 200;    
 }
 
