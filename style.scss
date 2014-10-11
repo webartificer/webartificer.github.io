@@ -166,7 +166,6 @@ nav {
     -webkit-transform: translateZ(0);
     box-sizing: content-box;
     border-top: none;
-    transition: background .3s ease;
     border-bottom: 1px solid $navy;
 
     @include tablet {
@@ -246,8 +245,7 @@ nav {
                   display: inherit !important;
                   height: 45px;
                   width: 45px;
-                  vertical-align: middle;
-                  transition: all .25s ease;       
+                  vertical-align: middle;     
                   padding: 0;
                   margin: 0;                   
                 }
