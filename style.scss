@@ -170,6 +170,7 @@ nav {
     border-top: none;
     border-bottom: 1px solid $navy;
 
+
     @include tablet {
         position: absolute;  
         top: 0;
@@ -199,6 +200,7 @@ nav {
         height: 100%;     
         text-align: center;
         vertical-align: middle; 
+       
 
         @include tablet {
             width: auto;
@@ -217,7 +219,7 @@ nav {
             vertical-align: middle;
             display: inline-block;
             padding-top: 7px;
-
+            transition: color .2s ease;
 
             &:hover {
                 background: $ltnavy;
@@ -274,6 +276,8 @@ nav {
             }
         }
     }  
+
+
 }
 
 nav.with_hero {
@@ -292,6 +296,55 @@ nav.f_nav {
     z-index: 200;    
 }
 
+.socials {
+    display: none;
+
+    @include tablet {
+        position: absolute;
+        display: block;
+        top: 0;            
+    }
+
+    a {
+        color: $navy;
+        padding: 0 .125em;
+        transition: color .2s ease;
+        line-height: $mh;
+        &:hover {
+            color: $blue;
+        }
+    }
+}
+
+nav .socials {
+    display: none;
+
+    @include tablet {
+        display: block;
+        right: 0;
+        padding: 0 20px;
+    }
+}
+
+.logo .socials {
+    
+    position: relative;
+    text-align: center;
+    display: block;
+
+    @include tablet {
+        display: none;
+    }
+
+    a {
+        line-height: 2em;
+    }
+
+    a:hover {
+        color: $white;
+    }
+
+}
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -314,11 +367,16 @@ nav.f_nav {
     width: 100%;
     height: 100%;
     min-height: 275px;
-    border-bottom: 5px solid #00111C;
+    border-bottom: 5px solid $navy;
     display: table;
+    transition: all .2s ease;
+
+    @include tablet {
+        border-top: 5px solid $navy;
+    }
 
     h1 {
-        font: 100%/1 'Raleway', sans-serif;
+        font: 100%/1 $raleway;
         font-weight: 700;  
         color: white;  
         font-size: 1.5em;
@@ -329,9 +387,9 @@ nav.f_nav {
     }
 
     h2 {
-        font: .7em/1 'Montserrat', sans-serif;
+        font: .7em/1 $montserrat;
         font-weight: 400;
-        color: #00111C;
+        color: $navy;
         text-align: center;
         margin: 0;
         padding: 0 0 .5em 0;
@@ -342,7 +400,15 @@ nav.f_nav {
         text-align: center;
         padding: 0;
         margin: -65px 0 0 0;
-        width: 150px;
+        width: 100px;
+
+        @include tablet {
+            width: 125px;
+        }
+
+        @include desktop {
+            width: 150px;
+        }
     }
 
 }
@@ -356,25 +422,32 @@ nav.f_nav {
 
 
 footer {
-  min-height: 150px;
+  height: 150px;
   display: table;
   width: 100%;
-}
 
-footer div {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  color: $gray;
-  font-size: .5em;
-}
 
-footer div span {
-  display: block;
-  line-height: 2em;
+  div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: $gray;
+    font-size: .5em;
+
+
+    span {
+      display: block;
+      line-height: 2em;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
 }
 
 
