@@ -171,7 +171,7 @@ nav {
     border-bottom: 1px solid $navy;
 
     @include tablet {
-        position: absolute;  
+        position: fixed;  
         top: auto;
         left: 0;
         border-top: 5px solid $navy;
@@ -280,6 +280,7 @@ nav {
 
 nav.with_hero {
     @include tablet {
+      position: absolute;
       bottom: 0px;
     }
 
