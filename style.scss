@@ -165,10 +165,9 @@ nav {
     left: 0px;    
     background: $navy;
     width: 100%;    
-    -webkit-transform: translateZ(0);
+
     box-sizing: content-box;
     border-top: none;
-    transition: background .3s ease;
     border-bottom: 1px solid $navy;
 
     @include tablet {
