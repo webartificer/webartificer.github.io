@@ -161,7 +161,7 @@ nav {
     height: $mh;
     position: fixed;
     top: 0;
-    left: 0;    
+    left: 0;
     background: $navy;
     width: 100%;    
     -webkit-transform: translateZ(0);
@@ -172,6 +172,8 @@ nav {
 
     @include tablet {
         position: absolute;  
+        top: 0;
+        left: 0;
         border-top: 5px solid $navy;
         border-bottom: 1px solid $lightGray;   
         background: $white;
