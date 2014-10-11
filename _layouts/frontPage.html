@@ -83,5 +83,13 @@
         <script src="{{ site.baseurl }}/js/vendor/wow.min.js"></script>
         <script src="{{ site.baseurl }}/js/plugins.js"></script>
         <script src="{{ site.baseurl }}/js/main.js"></script>
+
+        <script>
+         document.addEventListener('touchmove', function(event) {
+   if(event.target.parentNode.className.indexOf('noBounce') != -1 
+|| event.target.className.indexOf('noBounce') != -1 ) {
+    event.preventDefault(); }
+}, false);
+         </script>
     </body>
 </html>
