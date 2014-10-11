@@ -28,7 +28,6 @@ body {
   -webkit-font-smoothing: antialiased;
   color: $darkGray;
   background: $offwhite;  
-  overflow: hidden;
   position: relative;
 
   @include tablet {
@@ -161,7 +160,6 @@ img {
 nav {
     height: $mh;
     position: fixed;
-    position: sticky;
     top: 0;
     left: 0;    
     background: $navy;
