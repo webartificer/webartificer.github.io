@@ -169,6 +169,7 @@ nav {
     box-sizing: content-box;
     border-top: none;
     border-bottom: 1px solid $navy;
+    z-index: 300;
 
     @include tablet {
         position: fixed;  
