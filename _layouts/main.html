@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:300italic,400|Raleway:200,700' rel='stylesheet' type='text/css'>
+   
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+    <body id="top">
+
+        <nav>
+            <ul>
+                <li><a href="#top"><div><i class="fa fa-home fa-2x home"></i>Home</div><img src="{{ site.baseurl }}/images/cf_logo.svg" width="45" height="45" alt="Charlie Fox" title="Charlie Fox"></a>
+                <li><a href="#works"><i class="fa fa-picture-o fa-2x"></i>Works</a>
+                <li><a href="#skills"><i class="fa fa-paper-plane-o fa-2x"></i>Skills</a>
+                <li><a href="#contact"><i class="fa fa-envelope-o fa-2x"></i>Contact</a>
+                <li><a href="#about"><i class="fa fa-user fa-2x"></i>About</a>
+            </ul>
+            <div class="socials">
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></i></a>
+            </div>
+        </nav>
+
+        <div id="content">
+            {{ content }}
+
+        </div>
+
+
+            <footer>
+                <div class="wow zoomInUp">
+                    <img src="{{ site.baseurl }}/images/cf_logo_tiny.svg" width="32px" height="32px" >
+                    <span>&copy; 2014 Charlie Fox</span>
+                </div>
+            </footer>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+        <script src="{{ site.baseurl }}/js/vendor/jquery.singlePageNav.min.js"></script>
+        <script src="{{ site.baseurl }}/js/vendor/wow.min.js"></script>
+        <script src="{{ site.baseurl }}/js/plugins.js"></script>
+        <script src="{{ site.baseurl }}/js/main.js"></script>
+
+
+    </body>
+</html>
