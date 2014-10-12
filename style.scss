@@ -228,9 +228,11 @@ nav {
 
             &:hover {
                 background: $ltnavy;
+                color: $white;
 
                 @include tablet {
                   background: none;
+                  color: $blue;
                 }
             }
 
