@@ -1,39 +1,51 @@
 ---
 layout: main
 ---
-
-    <div class="row clearfix portfolio card ">
-        <div class="column full">
-            <h3>{{ page.title }}</h3>
-            <h4>{{ page.tags | join: ' <i>|</i> ' }}</h4>
-            {{ content }}
-        </div>          
-        <div class="column full">
-            {% if page.thumbnail %}
-                <img src="../{{ page.thumbnail }}" style="width: 100%" />
-            {% else %}
-                <img src="../images/ph.svg" style="width: 100%" />
-            {% endif %}
-            
-        </div>  
-        <div class="column full">
-            {% if site.disqus %}
-            <div class="comments">
-                <div id="disqus_thread"></div>
-                <script type="text/javascript">
+    <div id="project">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1>{{ page.title }}</h1>
                 
-                    var disqus_shortname = '{{ site.disqus }}'; 
-
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                
+            </div>  
+        </div>
+        <div class="row clearfix ">        
+            <div class="column three-fourths">
+                {% if page.thumbnail %}
+                    <img src="../{{ page.thumbnail }}" style="width: 100%" />
+                {% else %}
+                    <img src="../images/ph.svg" style="width: 100%" />
+                {% endif %}
+                {{ content }}
+            </div>  
+            <div class="column fourth projectDetails">
+                <h3>Categories</h3>
+                <ul><li>{{ page.tags | join: ' <li> ' }}</ul>
+                <a href="#" class="button">Visit Website</a>
             </div>
-            {% endif %}
+        </div>
+    </div>
+    <div id="comments">
+        <div class="row clearfix ">
+            <div class="column three-fourths">
+                {% if site.disqus %}
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                    
+                        var disqus_shortname = '{{ site.disqus }}'; 
+
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                </div>
+                {% endif %}
+            </div>
         </div>
     </div>
 
