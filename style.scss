@@ -473,6 +473,22 @@ nav .socials {
     }
 }
 
+#blog {
+    padding-top: 5em;
+
+    h1 {
+        font: 175%/1 $montserrat;
+        font-weight: 700;  
+        color: $navy;  
+        margin: 0;
+        padding: 2em 0 0;
+        text-transform: uppercase;
+
+        a {
+            color: $navy;
+        }
+    }
+}
 
 .column {
     padding: 0rem;

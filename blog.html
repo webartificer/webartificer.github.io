@@ -1,0 +1,19 @@
+---
+layout: main
+title: Blog
+permalink: /blog/
+---
+
+            <div id="blog">
+                {% for post in site.categories.blog %}    
+                    <div class="row clearfix">
+
+                        <div class="column three-fourths">
+                            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+                            <h4>{{ post.date | date: "%B %d, %Y" }}</h4>
+                            {{ post.content }}
+                            
+                        </div>                                            
+                    </div>
+                {% endfor %}   
+            </div>
