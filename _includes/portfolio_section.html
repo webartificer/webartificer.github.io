@@ -1,29 +1,29 @@
 <!-- Portfolio Start -->
-<div id="works">
-    <div class="row clearfix portfolio ">
-        <div class="column full">                
-            <h1 class="noline">Things<i> I've Made</i></h1>
-            <h2>Some catchy subheading goes here</h2>
-        </div>
-    </div>
-    {% for post in site.categories.portfolio %}    
-        <div class="row clearfix portfolio card ">
-            <div class="column half">
 
-                {% if post.thumbnail %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumbnail }}" style="width: 100%" /></a>
-                {% else %}
-                    <a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/ph.svg" style="width: 100%" /></a>
-                {% endif %}
+                <div class="row clearfix portfolio ">
+                    <div class="column full">                
+                        <h1>Things<strong> I've Made</strong></h1>
+                        <h2>Some catchy subheading goes here</h2>
+                    </div>
+                </div>
+                {% for post in site.categories.portfolio %}    
+                    <div class="row clearfix portfolio card ">
+                        <div class="column half">
 
-            </div>
-            <div class="column half">
-                <h3>{{ post.title }}</h3>
-                <h4>{{ post.tags | join: ' <i>|</i> ' }}</h4>
-                <p>{{ post.content | truncatewords:30 | remove: '<p>' | remove: '</p>' }}</p>
-                <a href="{{ site.baseurl }}{{ post.url }}" class="button">View Case Study</a>
-            </div>                                            
-        </div>
-    {% endfor %}    
-</div>
+                            {% if post.thumbnail %}
+                                <a href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumbnail }}" style="width: 100%" /></a>
+                            {% else %}
+                                <a href="{{ site.baseurl }}{{ post.url }}"><img src="/images/ph.svg" style="width: 100%" /></a>
+                            {% endif %}
+
+                        </div>
+                        <div class="column half">
+                            <h3>{{ post.title }}</h3>
+                            <h4>{{ post.tags | join: ' <i>|</i> ' }}</h4>
+                            <p>{{ post.content | truncatewords:30 | remove: '<p>' | remove: '</p>' }}</p>
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="button">View Case Study</a>
+                        </div>                                            
+                    </div>
+                {% endfor %}    
+
 <!-- Portfolio End --> 
