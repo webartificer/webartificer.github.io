@@ -50,7 +50,7 @@ body {
   
 h1 {
     margin: 0;
-    padding: 1rem;
+    padding: 2em 0 0;
     font: 300%/1 $raleway;
     font-weight: 200;
     color: $navy;
@@ -61,26 +61,27 @@ h2 {
     font-style: italic;
     font-weight: 300;
     margin: 0;
-    padding: 1rem;
+    padding: 0 0;
     color: $gray;
 }
 
 h3 {
     font: 1.15em/1 $montserrat;
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 0;
 }
 
 h4 {
     font: .7em/1 $montserrat;
     color: $gray;
-    padding: 1rem;
+    padding: 1rem 0;
     margin: 0;
     text-transform: uppercase;
 }
 
 p {
   margin: 0;
+  padding: 1rem 0;
 }
 
 a {
@@ -172,7 +173,7 @@ nav {
     z-index: 300;
 
     @include tablet {
-        position: fixed;  
+
         top: auto;
         left: 0;
         border-top: 5px solid $navy;
@@ -357,9 +358,6 @@ nav .socials {
     max-width: 1200px;
     margin: 0 auto;
 
-    div {
-        min-height: 500px;
-    }
 }
 
 #hero {
@@ -420,6 +418,29 @@ nav .socials {
     width: 100%;
 }
 
+.column {
+    float: left;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.column img {
+    padding: 1rem 0;
+}
+
+.column.full { width: 100%; }
+.column.two-thirds { width: 66.7%; }
+.column.half { width: 50%; }
+.column.third { width: 33.3%; }
+.column.fourth { width: 25%; }
+.column.eighth { width: 12.5%; }
+.column.seven-eighths { width: 87.5%; }
+.column.three-fourths { width: 75%; }
+.column.flow-opposite { float: right; } 
+
+.row {
+    padding: 1rem 0;
+}
 
 footer {
   height: 150px;
@@ -450,7 +471,26 @@ footer {
   }
 }
 
+a.button, .button {
+    padding: .7em 1.5em;
+    margin: 1em 0;
+    color: $white;
+    background: $blue;
+    text-decoration: none;
+    font-family: $montserrat;
+    font-weight: 400;
+    font-size: .9em;
+    display: inline-block;
+    border:  solid 2px $blue;
+    transition: all .2s ease;
+    border-radius: 3px;
+}
 
+a.button:hover, .button:hover {
+    color:$blue;
+    background: $white;
+
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

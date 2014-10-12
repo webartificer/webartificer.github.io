@@ -1,13 +1,14 @@
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="374px" viewBox="0 0 600 374" enable-background="new 0 0 600 374" xml:space="preserve">	
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="640px" height="380px" viewBox="0 0 640 380" enable-background="new 0 0 640 380" xml:space="preserve">
+<rect fill="#F2F2F2" width="640" height="380"/>
 <g>
 	<g>
-		<rect x="0" y="0" fill="#E6E6E6" width="600" height="34"/>
+		<g>
+			<rect fill="#E6E6E6" width="640" height="33.5"/>
+		</g>
 	</g>
-	<g>
-		<rect x="0" y="34" fill="#F2F2F2" width="600" height="340"/>
-	</g>
-	<circle fill="#C1272D" cx="21" cy="16.9" r="5.7"/>
-	<circle fill="#FBB03B" cx="38.2" cy="16.9" r="5.7"/>
-	<circle fill="#27AE60" cx="55.3" cy="16.9" r="5.7"/>
+	<circle fill="#C1272D" cx="22.4" cy="18" r="6.1"/>
+	<circle fill="#FBB03B" cx="40.7" cy="18" r="6.1"/>
+	<circle fill="#27AE60" cx="59" cy="18" r="6.1"/>
 </g>
 </svg>
