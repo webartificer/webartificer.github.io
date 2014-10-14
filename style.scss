@@ -765,6 +765,40 @@ a.button:hover, .button:hover {
     padding-top: 4em;
 }
 
+#error {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+
+
+    h1 {
+        font-weight: 700;
+         font-family: $montserrat;
+         font-size: 5em;
+    }
+
+    p {
+        display: block;
+    }
+
+    a {
+        padding: .5em 1.25em;
+        color: $white;
+        background: $blue;
+        text-decoration: none;
+        font-family: $montserrat;
+        font-weight: 400;
+        font-size: .8em;
+        display: block;
+        max-width: 200px;
+        margin: 2em auto 0; 
+        border:  solid 2px $blue;
+        transition: all .2s ease;
+        border-radius: 3px;
+    }
+
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
